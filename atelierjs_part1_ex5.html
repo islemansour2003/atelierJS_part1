@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>atelier js_ex5</title>
+</head>
+
+<body>
+    <script>
+        function entierAleatoire(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var choix=entierAleatoire(0,10);
+        console.log(choix)
+        var n=0;
+        do{
+            n++
+        var nb=prompt("veuillez entrer le nombre","tapez nombre");
+       
+        }while ((n<3) && (nb!=choix));
+        if(nb==choix)
+        alert("Bravo vous avez devinez le nombre")
+    else
+    alert("desolé!")
+        
+
+
+
+    </script>
+</body>
+
+</html>
